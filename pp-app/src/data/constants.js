@@ -210,8 +210,8 @@ export const projects = [
     title: "Blog&Business",
     description:
       "Career Consultant's Professional Website: Designed with a clean and user-friendly interface for optimal usability.",
-    image:
-      "https://github.com/RashadMa/CareerConsultantFront/assets/87971037/919fb6ee-1d97-4245-96c5-790c7310ff8e",
+    // image:
+    //   "https://github.com/RashadMa/CareerConsultantFront/assets/87971037/919fb6ee-1d97-4245-96c5-790c7310ff8e",
     tags: ["HTML", "CSS", "Javascript", "Bootstrap", "SCSS"],
     category: "web app",
     github: "Private",

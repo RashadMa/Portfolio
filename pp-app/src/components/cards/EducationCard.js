@@ -97,15 +97,6 @@ const Name = styled.div`
   }
 `;
 
-const Degree = styled.div`
-  font-size: 14px;
-  font-weight: 500;
-  color: ${({ theme }) => theme.text_secondary + 99};
-  @media only screen and (max-width: 768px) {
-    font-size: 12px;
-  }
-`;
-
 const Date = styled.div`
   font-size: 12px;
   font-weight: 400;
@@ -122,7 +113,6 @@ const EducationCard = ({ education }) => {
         <Image src={education.img} />
         <Body>
           <Name>{education.school}</Name>
-          <Degree>{education.degree}</Degree>
           <Date>{education.date}</Date>
         </Body>
       </Top>

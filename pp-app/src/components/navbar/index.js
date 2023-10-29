@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled, { useTheme } from "styled-components";
-import { Link as LinkR } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 
 const Nav = styled.div`
@@ -14,9 +14,10 @@ const Nav = styled.div`
   top: 0;
   z-index: 10;
   @media (max-width: 960px) {
-    trastion: 0.8s all ease;
+    transition: 0.8s all ease;
   }
 `;
+
 const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -28,16 +29,13 @@ const NavbarContainer = styled.div`
   max-width: 1200px;
 `;
 
-const NavLogo = styled(LinkR)`
+const NavLogo = styled(Link)`
   width: 80%;
   padding: 0 6px;
   display: flex;
   justify-content: start;
   align-items: center;
   text-decoration: none;
-  @media (max-width: 640px) {
-    padding: 0 0px;
-  }
 `;
 
 const MobileIcon = styled.div`
@@ -105,13 +103,10 @@ const GitHubButton = styled.a`
   text-decoration: none;
   align-items: center;
   font-size: 1rem;
-  // font-size: 16px;
   font-weight: 500;
   padding: 0 20px;
   cursor: pointer;
   height: 70%;
-  // text-decoration: none;
-  // transition: all 0.6s ease-in-out;
   :hover {
     background-color: ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.white};
@@ -160,7 +155,7 @@ const MobileMenuItems = styled.ul`
   height: 100%;
 `;
 
-const MobileMenuLink = styled(LinkR)`
+const MobileMenuLink = styled(Link)`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
@@ -172,60 +167,13 @@ const MobileMenuLink = styled(LinkR)`
 
   &.active {
     border-bottom: 2px solid ${({ theme }) => theme.primary};
-  }
-`;
-
-const MobileMenuButton = styled.a`
-  border: 1.8px solid ${({ theme }) => theme.primary};
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  height: 70%;
-  border-radius: 20px;
-  color: ${({ theme }) => theme.primary};
-  cursor: pointer;
-  padding: 0 20px;
-  font-weight: 500;
-  text-decoration: none;
-  font-size: 16px;
-  transition: all 0.6s ease-in-out;
-
-  :hover {
-    background: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.white};
-  }
-`;
-
-const MobileLink = styled.a`
-  color: ${({ theme }) => theme.text_primary};
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-  :hover {
-    color: ${({ theme }) => theme.primary};
-  }
-
-  &.active {
-    border-bottom: 2px solid ${({ theme }) => theme.primary};
-  }
-`;
-
-const MobileNavLogo = styled(LinkR)`
-  width: 80%;
-  padding: 0 6px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  text-decoration: none;
-  @media (max-width: 640px) {
-    padding: 0 0px;
   }
 `;
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const theme = useTheme();
+
   return (
     <Nav>
       <NavbarContainer>
@@ -282,11 +230,7 @@ const Navbar = () => {
           </a>
         </NavLogo>
         <MobileIcon>
-          <FaBars
-            onClick={() => {
-              setOpen(!open);
-            }}
-          />
+          <FaBars onClick={() => setOpen(!open)} />
         </MobileIcon>
         <NavItems>
           <NavLink href="#about">About</NavLink>
@@ -303,46 +247,11 @@ const Navbar = () => {
       </NavbarContainer>
       {open && (
         <MobileMenu open={open}>
-          <MobileMenuLink
-            href="#about"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
-            About
-          </MobileMenuLink>
-          <MobileMenuLink
-            href="#skills"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
-            Skills
-          </MobileMenuLink>
-          <MobileMenuLink
-            href="#experience"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
-            Experience
-          </MobileMenuLink>
-          <MobileMenuLink
-            href="#projects"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
-            Projects
-          </MobileMenuLink>
-          <MobileMenuLink
-            href="#education"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
-            Education
-          </MobileMenuLink>
+          <MobileMenuLink href="#about">About</MobileMenuLink>
+          <MobileMenuLink href="#skills">Skills</MobileMenuLink>
+          <MobileMenuLink href="#experience">Experience</MobileMenuLink>
+          <MobileMenuLink href="#projects">Projects</MobileMenuLink>
+          <MobileMenuLink href="#education">Education</MobileMenuLink>
           <GitHubButton
             style={{
               padding: "10px 16px",

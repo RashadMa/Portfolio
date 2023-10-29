@@ -14,6 +14,7 @@ const Button = styled.button`
   cursor: pointer;
   transition: all 0.8s ease-in-out;
 `;
+
 const Card = styled.div`
   width: 330px;
   height: 490px;
@@ -70,6 +71,7 @@ const Details = styled.div`
   gap: 0px;
   padding: 0px 2px;
 `;
+
 const Title = styled.div`
   font-size: 20px;
   font-weight: 600;
@@ -105,28 +107,13 @@ const Description = styled.div`
   text-overflow: ellipsis;
 `;
 
-const Members = styled.div`
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-`;
-const Avatar = styled.img`
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  margin-left: -10px;
-  background-color: ${({ theme }) => theme.white};
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border: 3px solid ${({ theme }) => theme.card};
-`;
-
 const ProjectCards = ({ project, setOpenModal }) => {
   return (
     <Card onClick={() => setOpenModal({ state: true, project: project })}>
       <Image src={project.image} />
       <Tags>
         {project.tags?.map((tag, index) => (
-          <Tag>{tag}</Tag>
+          <Tag key={index}>{tag}</Tag>
         ))}
       </Tags>
       <Details>

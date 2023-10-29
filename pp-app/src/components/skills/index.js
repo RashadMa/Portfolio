@@ -25,7 +25,7 @@ const Wrapper = styled.div`
   }
 `;
 
-export const Title = styled.div`
+const Title = styled.div`
   font-size: 42px;
   text-align: center;
   font-weight: 600;
@@ -37,7 +37,7 @@ export const Title = styled.div`
   }
 `;
 
-export const Desc = styled.div`
+const Desc = styled.div`
   font-size: 18px;
   text-align: center;
   max-width: 600px;
@@ -122,16 +122,15 @@ const Skills = () => {
       <Wrapper>
         <Title>Skills</Title>
         <Desc>
-          Here are some of my skills I have been working on for the
-          past 2 years.
+          Here are some of my skills I have been working on for the past 2 years.
         </Desc>
         <SkillsContainer>
           {skills.map((skill) => (
-            <Skill>
+            <Skill key={skill.title}>
               <SkillTitle>{skill.title}</SkillTitle>
               <SkillList>
-                {skill.skills.map((item) => (
-                  <SkillItem>
+                {skill.skills.map((item, index) => (
+                  <SkillItem key={index}>
                     <SkillImage src={item.image} />
                     {item.name}
                   </SkillItem>
