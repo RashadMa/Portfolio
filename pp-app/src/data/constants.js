@@ -10,7 +10,7 @@ export const Bio = {
     "Experienced Frontend and Mobile Developer with a passion for crafting seamless user experiences. Proficient in React for web applications and React Native for cross-platform mobile development. Skilled in creating dynamic, interactive interfaces that elevate user engagement. Possesses a proven track record of delivering high-quality, performance-driven solutions..",
   github: "https://github.com/RashadMa",
   resume:
-    "https://drive.google.com/file/d/12LtHJT8uSA1ULrjIEsSZcHewoxUzzmnl/view?usp=drive_link",
+    "https://drive.google.com/file/d/19JvW30uu1oMGN7QIq2YvcyPmjj3BDtDj/view",
   linkedin: "https://www.linkedin.com/in/rashadmammadov/",
 };
 
