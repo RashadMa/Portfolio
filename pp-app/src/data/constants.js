@@ -223,7 +223,7 @@ export const projects = [
     description:
       "Dive into my portfolio app, expertly crafted with ReactJS and Styled Components for a seamless blend of functionality and style. The use of ReactJS ensures efficient state management, while Styled Components adds a touch of elegance to the design. This personalized platform offers an intuitive and visually appealing showcase of projects and skills, making it a standout experience for both creators and visitors.",
     image:
-      "https://github-production-user-asset-6210df.s3.amazonaws.com/87971037/288473958-1b1a2c43-4420-43e8-94e9-ebd02b0b8cd3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231206%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231206T161824Z&X-Amz-Expires=300&X-Amz-Signature=d14b1f8864462c7c24aa1b74e83c72aa40370a55082b4d29be9dcf5dc816311a&X-Amz-SignedHeaders=host&actor_id=87971037&key_id=0&repo_id=709769969",
+      "https://github-production-user-asset-6210df.s3.amazonaws.com/87971037/278655849-999ead14-9682-4371-911b-27d4ca6ededf.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231206%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231206T164109Z&X-Amz-Expires=300&X-Amz-Signature=9aec258d7530aa4e075824b6491b2f3cd22e21634025aff8df3cacc5c75097a9&X-Amz-SignedHeaders=host&actor_id=87971037&key_id=0&repo_id=708383275",
     tags: ["ReactJS", "Styled Components"],
     category: "web app",
     github: "https://github.com/RashadMa/Portfolio",
