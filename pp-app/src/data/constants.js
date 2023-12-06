@@ -206,6 +206,31 @@ export const projects = [
     webapp: "https://promusicdemo.netlify.app/",
   },
   {
+    id: 101,
+    title: "Crypto Counter",
+    description:
+      "Explore the future of finance with our ReactJS-based crypto app, seamlessly blending functionality and aesthetics through the Context API and Tailwind CSS. Powered by the CoinGecko free API, it offers real-time cryptocurrency data while optimizing requests due to limited access. Enjoy an intuitive interface, responsive design, and stay ahead in the crypto world with our innovative and efficient application.",
+    image:
+      "https://github-production-user-asset-6210df.s3.amazonaws.com/87971037/288468832-e63de2b8-336a-454a-a05d-76c7510b6feb.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231206%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231206T160833Z&X-Amz-Expires=300&X-Amz-Signature=2518b120e60d623cbef061d01f4534ebbff9063194e2078c82856b50ac6d94b3&X-Amz-SignedHeaders=host&actor_id=87971037&key_id=0&repo_id=723375426",
+    tags: ["ReactJS", "Tailwind CSS", "Context API"],
+    category: "web app",
+    github: "https://github.com/RashadMa/Crypto-counter",
+    webapp: "https://rashadma-crypto-counter.vercel.app/",
+  },
+  {
+    id: 1012,
+    title: "Portfolio",
+    description:
+      "Dive into my portfolio app, expertly crafted with ReactJS and Styled Components for a seamless blend of functionality and style. The use of ReactJS ensures efficient state management, while Styled Components adds a touch of elegance to the design. This personalized platform offers an intuitive and visually appealing showcase of projects and skills, making it a standout experience for both creators and visitors.",
+    image:
+      "https://github-production-user-asset-6210df.s3.amazonaws.com/87971037/288473958-1b1a2c43-4420-43e8-94e9-ebd02b0b8cd3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231206%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231206T161824Z&X-Amz-Expires=300&X-Amz-Signature=d14b1f8864462c7c24aa1b74e83c72aa40370a55082b4d29be9dcf5dc816311a&X-Amz-SignedHeaders=host&actor_id=87971037&key_id=0&repo_id=709769969",
+    tags: ["ReactJS", "Styled Components"],
+    category: "web app",
+    github: "https://github.com/RashadMa/Portfolio",
+    webapp: "https://portfolio-rashadma.vercel.app/",
+  },
+
+  {
     id: 0,
     title: "Blog&Business",
     description:

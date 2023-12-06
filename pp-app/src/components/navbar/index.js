@@ -123,6 +123,12 @@ const Span = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 16px;
+  }
 `;
 
 const MobileMenu = styled.div`
@@ -142,17 +148,6 @@ const MobileMenu = styled.div`
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   opacity: ${({ open }) => (open ? "100%" : "0")};
   z-index: ${({ open }) => (open ? "1000" : "-1000")};
-`;
-
-const MobileMenuItems = styled.ul`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
-  list-style: none;
-  width: 100%;
-  height: 100%;
 `;
 
 const MobileMenuLink = styled(Link)`
@@ -178,7 +173,7 @@ const Navbar = () => {
     <Nav>
       <NavbarContainer>
         <NavLogo to="/">
-          <a
+          <div
             style={{
               display: "flex",
               alignItems: "center",
@@ -226,8 +221,8 @@ const Navbar = () => {
                 fill="white"
               />
             </svg>
-            <Span>Portfolio</Span>
-          </a>
+            <Span>Rashad's Portfolio</Span>
+          </div>
         </NavLogo>
         <MobileIcon>
           <FaBars onClick={() => setOpen(!open)} />
