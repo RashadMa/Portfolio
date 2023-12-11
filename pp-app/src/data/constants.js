@@ -206,6 +206,25 @@ export const projects = [
     webapp: "https://promusicdemo.netlify.app/",
   },
   {
+    id: 9,
+    title: "Full Auth app with Google",
+    description:
+      "A full-stack authentication app built with React.js, Redux Toolkit, Tailwind CSS, Google login/register, JSON Web Token (JWT), and Firebase.",
+    image:
+      "https://github-production-user-asset-6210df.s3.amazonaws.com/87971037/289581504-97f327c5-fc03-41b9-aeda-6c03590cc4fb.png",
+    tags: [
+      "ReactJS",
+      "Redux-Toolkit",
+      "Tailwind CSS",
+      "Google login/register",
+      "JSON Web Token (JWT)",
+      "Firebase"
+    ],
+    category: "web app",
+    github: "https://github.com/RashadMa/Login-Register-MERN",
+    webapp: "https://auth-qw8v.onrender.com/",
+  },
+  {
     id: 101,
     title: "Crypto Counter",
     description:
