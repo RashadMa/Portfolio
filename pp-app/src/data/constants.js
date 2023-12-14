@@ -206,7 +206,7 @@ export const projects = [
     webapp: "https://promusicdemo.netlify.app/",
   },
   {
-    id: 9,
+    id: 10123,
     title: "Full Auth app with Google",
     description:
       "A full-stack authentication app built with React.js, Redux Toolkit, Tailwind CSS, Google login/register, JSON Web Token (JWT), and Firebase.",
@@ -218,11 +218,23 @@ export const projects = [
       "Tailwind CSS",
       "Google login/register",
       "JSON Web Token (JWT)",
-      "Firebase"
+      "Firebase",
     ],
     category: "web app",
     github: "https://github.com/RashadMa/Login-Register-MERN",
     webapp: "https://auth-qw8v.onrender.com/",
+  },
+  {
+    id: 10533,
+    title: "10 Fast Fingers game logic with ReactJS",
+    description:
+      "Fast Fingers is an engaging ReactJS and Material-UI (MUI) game that challenges players to type quickly against the clock. Utilizing the Random Word API from Herokuapp, the game dynamically generates random words for players to type accurately and swiftly. With a sleek user interface and responsive design, Fast Fingers offers a fast-paced and entertaining typing experience for users of all skill levels.",
+    image:
+      "https://github-production-user-asset-6210df.s3.amazonaws.com/87971037/290596263-cad83bc8-9a2c-4a5f-8e57-5fcc40ea7741.png",
+    tags: ["ReactJS", "Material UI", "Firebase", "Herokuapp"],
+    category: "web app",
+    github: "https://github.com/RashadMa/FastFingers-React",
+    webapp: "https://fast-fingers-react-psi.vercel.app/",
   },
   {
     id: 101,
