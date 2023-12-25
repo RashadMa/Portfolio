@@ -184,6 +184,27 @@ export const education = [
 
 export const projects = [
   {
+    id: 818181,
+    title: "IMDb",
+    description:
+      "Immerse yourself in the world of cinema with our React IMDb Clone. Crafted with React, Redux Toolkit, SCSS, and the TMDB API, this application offers a seamless movie-browsing experience. Explore a vast database, discover movie details, and watch trailers using the integrated React Player. The use of Context API ensures efficient state management, while the stylish SCSS design provides an aesthetically pleasing interface. Whether you're a movie buff or a casual viewer, our IMDb Clone delivers a user-friendly and feature-rich platform for your cinematic journey.",
+    image:
+      "https://github-production-user-asset-6210df.s3.amazonaws.com/87971037/292761310-4a88c26c-4ef2-4e66-bb73-1357e219a9af.png",
+    tags: [
+      "ReactJS",
+      "Redux-Toolkit",
+      "Bootstrap",
+      "Reactstrap",
+      "Material UI",
+      "React-Player",
+      "SCSS",
+      "TMDB API",
+    ],
+    category: "web app",
+    github: "https://github.com/RashadMa/IMDb-React-clone",
+    webapp: "https://im-db-react-clone.vercel.app/",
+  },
+  {
     id: 9,
     title: "Promusic",
     description:
