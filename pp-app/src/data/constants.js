@@ -10,7 +10,7 @@ export const Bio = {
     "Experienced Frontend Developer with a passion for crafting seamless user experiences. Proficient in React for web applications and React Native for cross-platform mobile development. Skilled in creating dynamic, interactive interfaces that elevate user engagement. Possesses a proven track record of delivering high-quality, performance-driven solutions..",
   github: "https://github.com/RashadMa",
   resume:
-    "https://drive.google.com/file/d/19zY3eczIM795sMBgrrELRNj6HlKCKB9h/view",
+    "https://drive.google.com/file/d/1ExkdQgeUu0emGRF5LXjk3nyhgu5QgHqk/view",
   linkedin: "https://www.linkedin.com/in/rashadmammadov/",
 };
 
@@ -152,7 +152,7 @@ export const experiences = [
     id: 1,
     role: "Frontend Engineer",
     company: "Khazartech",
-    date: "Jan 2023 - Aug 2023",
+    date: "Jan 2023 - Dec 2023",
     desc: "Working on the frontend of the web application using ReactJS, Redux.",
     skills: ["ReactJS", "Redux", "Material UI", "HTML", "CSS", "JavaScript"],
   },
@@ -166,9 +166,18 @@ export const experiences = [
     skills: ["Typescript", "Javascript", "NodeJS", "ReactJS"],
   },
   {
+    id: 3,
+    img: "https://media.licdn.com/dms/image/D4E0BAQE2MRMgUaZn1g/company-logo_200_200/0/1684959103020/migrationpro_logo?e=1713398400&v=beta&t=ejosNanZZQ-xji6iYStNergHPDUlnRW86UhkLxTzC9c",
+    role: "Frontend Developer Intern",
+    company: "MigrationPro",
+    date: "Jan 2022 - Feb 2022",
+    desc: "Collaborated with the Back-end developers and other team members to establish objectives and design more functional, cohesive codes to enhance the user experience. Played a security bridge between company and client",
+    skills: ["ReactJS", "Redux-Toolkit", "JavaScript", "NodeJS"]
+  },
+  {
     id: 0,
     img: "https://avand.marja.az/wp-content/uploads/2022/05/Code-Academy.jpg",
-    role: "Education mentor internship",
+    role: "Education Mentor",
     company: "Code Academy Azerbaijan",
     date: "Nov 2021 - Feb 2022",
     desc: "I helped beginner programming students and answered their questions.",
@@ -315,28 +324,28 @@ export const projects = [
     github: "Private",
     webapp: "https://lamiyasafarova.netlify.app/",
   },
-  {
-    id: 1,
-    title: "Battery Detector App",
-    description:
-      "A Basic Energy Detection App: Boasting an appealing interface, the development process was engaging and enjoyable.",
-    image:
-      "https://github-production-user-asset-6210df.s3.amazonaws.com/87971037/278655250-cff95554-3aa0-4c5e-a686-6a16b0cc13f2.png",
-    tags: ["HTML", "CSS", "Javascript"],
-    category: "web app",
-    github: "https://github.com/RashadMa/Battery-level-detector",
-    webapp: "https://battery-level-detector.vercel.app/",
-  },
-  {
-    id: 2,
-    title: "Calculator",
-    description:
-      "A simple calculation application. I chose to use React Technology.",
-    image:
-      "https://github-production-user-asset-6210df.s3.amazonaws.com/87971037/278655849-999ead14-9682-4371-911b-27d4ca6ededf.png",
-    tags: ["ReactJS", "CSS"],
-    category: "web app",
-    github: "https://github.com/RashadMa/CalculatorReact",
-    webapp: "https://calculator-react-lyolyi358-rashadma.vercel.app/",
-  },
+  // {
+  //   id: 1,
+  //   title: "Battery Detector App",
+  //   description:
+  //     "A Basic Energy Detection App: Boasting an appealing interface, the development process was engaging and enjoyable.",
+  //   image:
+  //     "https://github-production-user-asset-6210df.s3.amazonaws.com/87971037/278655250-cff95554-3aa0-4c5e-a686-6a16b0cc13f2.png",
+  //   tags: ["HTML", "CSS", "Javascript"],
+  //   category: "web app",
+  //   github: "https://github.com/RashadMa/Battery-level-detector",
+  //   webapp: "https://battery-level-detector.vercel.app/",
+  // },
+  // {
+  //   id: 2,
+  //   title: "Calculator",
+  //   description:
+  //     "A simple calculation application. I chose to use React Technology.",
+  //   image:
+  //     "https://github-production-user-asset-6210df.s3.amazonaws.com/87971037/278655849-999ead14-9682-4371-911b-27d4ca6ededf.png",
+  //   tags: ["ReactJS", "CSS"],
+  //   category: "web app",
+  //   github: "https://github.com/RashadMa/CalculatorReact",
+  //   webapp: "https://calculator-react-lyolyi358-rashadma.vercel.app/",
+  // },
 ];
