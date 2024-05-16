@@ -309,18 +309,18 @@ export const projects = [
     github: "https://github.com/RashadMa/Crypto-counter",
     webapp: "https://rashadma-crypto-counter.vercel.app/",
   },
-  {
-    id: 1012,
-    title: "Personal Portfolio",
-    description:
-      "Dive into my portfolio app, expertly crafted with ReactJS and Styled Components for a seamless blend of functionality and style. The use of ReactJS ensures efficient state management, while Styled Components adds a touch of elegance to the design. This personalized platform offers an intuitive and visually appealing showcase of projects and skills, making it a standout experience for both creators and visitors.",
-    image:
-      "https://github-production-user-asset-6210df.s3.amazonaws.com/87971037/288473958-1b1a2c43-4420-43e8-94e9-ebd02b0b8cd3.png",
-    tags: ["ReactJS", "TailwindCSS"],
-    category: "web app",
-    github: "https://github.com/RashadMa/Portfolio",
-    webapp: "https://portfolio-rashadma.vercel.app/",
-  },
+  // {
+  //   id: 1012,
+  //   title: "Personal Portfolio",
+  //   description:
+  //     "Dive into my portfolio app, expertly crafted with ReactJS and Styled Components for a seamless blend of functionality and style. The use of ReactJS ensures efficient state management, while Styled Components adds a touch of elegance to the design. This personalized platform offers an intuitive and visually appealing showcase of projects and skills, making it a standout experience for both creators and visitors.",
+  //   image:
+  //     "https://github-production-user-asset-6210df.s3.amazonaws.com/87971037/288473958-1b1a2c43-4420-43e8-94e9-ebd02b0b8cd3.png",
+  //   tags: ["ReactJS", "TailwindCSS"],
+  //   category: "web app",
+  //   github: "https://github.com/RashadMa/Portfolio",
+  //   webapp: "https://portfolio-rashadma.vercel.app/",
+  // },
   {
     id: 0,
     title: "Blog&Business",
