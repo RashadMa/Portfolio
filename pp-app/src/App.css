@@ -8,13 +8,15 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 body {
   margin: 0px !important;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter, Inter Placeholder, sans-serif";
+  background-color: rgb(26, 24, 26);
+  animation: smoothScroll 2.5s ease-out;
 }
 
 ::-webkit-scrollbar {
@@ -33,4 +35,72 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #626970;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.stick {
+  position: sticky;
+  top: 0;
+}
+
+.black-bg {
+  background-color: rgb(26, 24, 26);
+}
+
+.black-tx {
+  color: rgb(26, 24, 26);
+}
+
+.white-bg {
+  background: rgb(235, 235, 235);
+}
+
+.white-tx {
+  color: rgb(235, 235, 235);
+}
+
+.gray-tx {
+  color: rgb(160, 160, 160);
+}
+
+.blend {
+  color: rgb(235, 235, 235);
+  mix-blend-mode: difference;
+  position: fixed;
+}
+
+.bb {
+  border-bottom: 0.5px solid rgb(122, 122, 122);
+}
+
+.br {
+  border-right: 0.5px solid rgb(122, 122, 122);
+}
+
+.bl {
+  border-left: 0.5px solid rgb(122, 122, 122);
+}
+
+.bt {
+  border-top: 0.5px solid rgb(122, 122, 122);
+}
+
+.b-full {
+  border: 0.5px solid rgb(122, 122, 122);
+}
+
+.border-div {
+  background-color: rgb(122, 122, 122);
+}
+
+@keyframes smoothScroll {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

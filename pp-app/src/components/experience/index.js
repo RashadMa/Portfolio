@@ -1,105 +1,45 @@
 import React from "react";
-import styled from "styled-components";
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
 import ExperienceCard from "../cards/ExperienceCard";
-import { experiences } from "../../data/constants";
+import { education, experiences } from "../../data/constants";
+import EducationCard from "../cards/EducationCard";
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  align-items: center;
-  padding: 40px 0px 80px 0px;
-  @media (max-width: 960px) {
-    padding: 0px;
-  }
-`;
-
-const Wrapper = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1350px;
-  padding: 80px 0;
-  gap: 12px;
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
-`;
-
-const Title = styled.div`
-  font-size: 42px;
-  text-align: center;
-  font-weight: 600;
-  margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 32px;
-  }
-`;
-
-const Desc = styled.div`
-  font-size: 18px;
-  text-align: center;
-  max-width: 600px;
-  color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 16px;
-  }
-`;
-
-const TimelineSection = styled.div`
-  width: 100%;
-  max-width: 1000px;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-`;
-
-const index = () => {
+const Experience = () => {
   return (
-    <Container id="experience">
-      <Wrapper>
-        <Title>Experience</Title>
-        <Desc>
-          My work experience as a Frontend Developer and working on companies
-          and projects.
-        </Desc>
-        <TimelineSection>
-          <Timeline>
+    <section className="white-bg md:sticky md:top-0" id="experience">
+      <div className="container p-4 sm:p-0 mx-auto">
+        <div className="sticky top-0 white-bg block inter 2xl:text-[120px] xl:text-8xl lg:text-7xl md:text-5xl text-4xl font-normal tracking-tighter pt-12 black-tx">
+          <div className="mt-4">
+            Background
+          </div>
+          <div>
+            <div className="w-full h-[0.1px] border-div"></div>
+          </div>
+        </div>
+        <div className="flex md:flex-row flex-col pb-10">
+          <div className="basis-1/4">
+            <div className="w-full h-[0.1px] border-div mb-4"></div>
+            <p className="black-tx lg:text-3xl font-normal">experience</p>
+          </div>
+          <div className="basis-3/4 items-center pl-3">
             {experiences.map((experience, index) => (
-              <TimelineItem key={index}>
-                <TimelineSeparator>
-                  <TimelineDot variant="outlined" color="secondary" />
-                  {index !== experiences.length - 1 && (
-                    <TimelineConnector style={{ background: "#854CE6" }} />
-                  )}
-                </TimelineSeparator>
-                <TimelineContent sx={{ py: "12px", px: 2 }}>
-                  <ExperienceCard experience={experience} />
-                </TimelineContent>
-              </TimelineItem>
+              <ExperienceCard key={index} experience={experience} />
             ))}
-          </Timeline>
-        </TimelineSection>
-      </Wrapper>
-    </Container>
+          </div>
+        </div>
+        <div className="flex md:flex-row flex-col">
+          <div className="basis-1/4">
+            <div className="w-full h-[0.1px] border-div mb-4"></div>
+            <p className="black-tx lg:text-3xl font-normal">education</p>
+          </div>
+          <div className="basis-3/4 items-center pl-3 mb-5">
+            {education.map((education, index) => (
+              <EducationCard key={index} education={education} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
-export default index;
+export default Experience;

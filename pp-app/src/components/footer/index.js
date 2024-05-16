@@ -1,98 +1,53 @@
-import styled from 'styled-components';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import { Link } from 'react-router-dom';
 import { Bio } from '../../data/constants';
-
-const FooterContainer = styled.div`
-  width: 100%;
-  padding: 2rem 0;
-  display: flex;
-  justify-content: center;
-  //background: linear-gradient(100.26deg, rgba(0, 102, 255, 0.05) 42.33%, rgba(150, 0, 225, 0.05) 127.07%);
-`;
-
-
-const FooterWrapper = styled.footer`
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  align-items: center;
-  padding: 1rem;
-  color: ${({ theme }) => theme.text_primary};
-`;
-
-const Logo = styled.h1`
-  font-weight: 600;
-  font-size: 20px;
-  color: ${({ theme }) => theme.primary};
-`;
-
-const Nav = styled.nav`
-  width: 100%;
-  max-width: 800px;
-  margin-top: 0.5rem;
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  justify-content: center;
-  @media (max-width: 768px) {
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    text-align: center;
-    font-size: 12px;
-  }
-`;
-
-const NavLink = styled.a`
-color: ${({ theme }) => theme.text_primary};
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: color 0.2s ease-in-out;
-  &:hover {
-    color: ${({ theme }) => theme.primary};
-  }
-  @media (max-width: 768px) {
-    font-size: 1rem;
-  }
-`;
-
-const SocialMediaIcons = styled.div`
-  display: flex;
-  margin-top: 1rem;
-`;
-
-const SocialMediaIcon = styled.a`
-  display: inline-block;
-  margin: 0 1rem;
-  font-size: 1.5rem;
-  color: ${({ theme }) => theme.text_primary};
-  transition: color 0.2s ease-in-out;
-  &:hover {
-    color: ${({ theme }) => theme.primary};
-  }
-`;
 
 function Footer() {
   return (
-    <FooterContainer>
-      <FooterWrapper>
-      <Logo>E-mail: rashadmmdov@gmail.com</Logo>
-        <Nav>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#experience">Experience</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
-        </Nav>
-        <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.github} target="display"><LinkedInIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.linkedin} target="display"><GitHubIcon /></SocialMediaIcon>
-        </SocialMediaIcons>
-      </FooterWrapper>
-    </FooterContainer>
+    <footer className='
+    // md:sticky md:top-0
+     black-bg min-h-min'
+      id='footer'>
+      <div className='container sm:px-0 px-4 py-10 mx-auto'>
+        <h1 className="bb pb-20 2xl:text-[120px] xl:text-8xl lg:text-7xl md:text-5xl text-4xl font-normal tracking-tighter white-tx">
+          Contact
+        </h1>
+        <div className='flex justify-between'>
+          <div className='basis-1/2'>
+            <div className='bb md:p-5 p-2  flex md:flex-row flex-col justify-between'>
+              <div className='white-tx md:pb-12 pb-6 md:text-base text-xs'>phone</div>
+              <div className='white-tx pb-12 md:text-base text-xs'>{Bio.phone}</div>
+            </div>
+            <div className='bb md:p-5 p-2  flex md:flex-row flex-col justify-between'>
+              <div className='white-tx md:pb-12 pb-6 md:text-base text-xs'>email</div>
+              <div className='white-tx pb-12 md:text-base text-xs'>{Bio.email}</div>
+            </div>
+          </div>
+          <div className='basis-1/2 bl'>
+            <div className='bb md:p-5 p-2  flex md:flex-row flex-col justify-between'>
+              <div className='white-tx pb-6 md:text-base text-xs'>social</div>
+              <div className='white-tx pb-6'>
+                <div>
+                  <Link className='hover:underline md:text-base text-xs' to={Bio.linkedin} target='new'>
+                    linkedin
+                  </Link>
+                </div>
+                <div>
+                  <Link className='hover:underline md:text-base text-xs' to={Bio.github} target='new'>
+                    github
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        {/* <h1 className='white-tx text-2xl'>
+            <MailOutlineIcon className='mr-3' />
+            {Bio.email}
+          </h1> */}
+      </div>
+    </footer>
   );
 }
 
