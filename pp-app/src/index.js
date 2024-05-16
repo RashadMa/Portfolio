@@ -7,6 +7,7 @@ import Resume from "./pages/Resume";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import ProjectsPage from "./pages/ProjectsPage";
+import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter(createRoutesFromElements(
   <>
@@ -15,6 +16,7 @@ const router = createBrowserRouter(createRoutesFromElements(
       <Route path='/resume' element={<Resume />} />
       <Route path='/blog' element={<Blog />} />
       <Route path='/projects' element={<ProjectsPage />} />
+      <Route path="*" element={<NotFound />} />
     </Route>
   </>
 ))

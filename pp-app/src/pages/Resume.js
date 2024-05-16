@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import { Bio, experiences } from '../data/constants';
 import TranslateIcon from '@mui/icons-material/Translate';
 
 const Resume = () => {
+      useEffect(() => {
+            window.scrollTo(0, 0)
+      }, [])
       return (
             <div className='min-h-screen md:sticky md:top-0 white-tx pb-6 p-4'>
                   <div className='container mx-auto'>

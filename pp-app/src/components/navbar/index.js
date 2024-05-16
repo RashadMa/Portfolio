@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="blend text-white w-full z-50 ">
+    <nav className="blend text-white w-full z-50 px-4">
       <div className="bb container mx-auto">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">

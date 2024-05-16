@@ -7,10 +7,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth !important;
-}
-
 body {
   margin: 0px !important;
   padding: 0;

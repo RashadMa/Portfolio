@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Hero from '../components/heroSection'
 import Skills from '../components/skills'
 import Projects from '../components/projects'
@@ -7,6 +7,9 @@ import ProjectDetails from '../components/ProjectDetails'
 
 const Home = () => {
       const [openModal, setOpenModal] = useState({ state: false, project: null });
+      useEffect(() => {
+            window.scrollTo(0, 0)
+      }, [])
       return (
             <>
                   <Hero />

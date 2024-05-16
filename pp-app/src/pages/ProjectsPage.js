@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { projects } from '../data/constants'
 
 const ProjectsPage = () => {
+      useEffect(() => {
+            window.scrollTo(0, 0)
+      }, [])
       return (
             <div className='min-h-screen md:sticky md:top-0 white-tx pb-6 p-4'>
                   <div className='container mx-auto'>
